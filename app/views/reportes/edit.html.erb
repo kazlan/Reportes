@@ -1,0 +1,27 @@
+<div class="caja_fondo2">
+  <%= link_to_close_redbox image_tag('/images/close24.png'),:class=>"boton_cerrar"%>
+<h1>Edicion de reporte</h1>
+<% form_for(@reporte) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :texto %><br />
+    <%= f.text_area :texto, :rows=>3, :cols=>30 %>
+  </p>
+  <p>
+  Ticket <%= f.text_field :ticket, :size=>10 %>
+  </p>
+  Tecnico <%= collection_select("reporte","user_s",User.find(:all,:conditions => "rol = 'tecnico' OR rol='admin'"),"login","login")%>
+  <p>
+  Tipo <%= collection_select("reporte", "tipo_s", Tipo.find(:all),"nombre","nombre") %>
+  <p>
+  Turno <%= collection_select("reporte","turno_s", Turno.find(:all),"nombre","nombre")%>
+  </p>
+  <p>
+   Resaltar <%= f.check_box :warning %>
+  </p>
+  <p>
+    <%= f.submit "Actualizar" %>
+  </p>
+<% end %>
+</div>

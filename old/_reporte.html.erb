@@ -1,0 +1,10 @@
+<tr>
+	<td><%= reporte.created_at.strftime("%d/%b/%Y") %></td>
+	<td><%=Turno.find_by_id(reporte.turno_id).nombre %></td>
+<!--	<td><%= Tecnico.find_by_id(reporte.tecnico_id).nombre %></td> -->
+    <td><%= link_to Tecnico.find_by_id(reporte.tecnico_id).nombre, reportes_tecnico_path(reporte.tecnico_id) %>
+	<td><%= Tipo.find_by_id(reporte.tipo_id).nombre %></td>
+	<td><%= link_to reporte.texto[0..39], reporte %></td>
+	<td><%= link_to '|E|', edit_reporte_path(reporte) %></td>
+	<td><%= link_to '|X|', reporte, :confirm => 'Seguro que desea eliminar el registro?', :method => :delete %></td>
+</tr>

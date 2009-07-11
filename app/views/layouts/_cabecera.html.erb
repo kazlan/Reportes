@@ -1,0 +1,60 @@
+<div id="cabecera">Reportes:: Servei Continu cctrvi
+
+</div>
+<div id="menu-lateral">
+<!-- ## LOGIN BOX ## -->
+<div class="side-box" style="background: #ccc;">
+  <% if logged_in? -%><ul><li class="header">Login info&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <%= link_to 'logout', logout_path , :style=>"color:red;"%>
+        </li>
+        <li>Usuario:&nbsp;<%=h current_user.login %> </li>
+        <li>Turno <%=h session[:turno] %> </li>
+    </ul>
+</div>
+<!-- ## SEARCH BOX ## -->
+<div class="side-box">
+<% form_tag request.path, :method => 'get' do %>
+  <ul>
+   <li class="header">Busqueda</li>
+   <li id="caja-busqueda">
+     <!-- si filtramos por columna rellenamos la caja con params[:search], hash para filtrar los registros..
+     si filtramos por caja de texto usamos texto_caja(string) para diferenciar -->
+     <table><tr>
+       <td>
+        <%= text_field_tag :texto_caja, params[:search]? params[:search].values[0]:params[:texto_caja], :id=>"searchbox", :onClick=>"javascript:this.form.searchbox.focus( ); this.form.searchbox.select();", :size=>"17" -%>
+       </td><td>
+       <%= link_to "X", { :action=>"index", :search=>{}},:id=>"red_button" %>
+       </td>
+     </tr> </table>
+  </li>
+ </ul>
+<% end %>
+</div>
+<!-- ## BOTONERA PRINCIPAL ## -->
+<div class="side-box">
+  <ul id="botonera">
+    <li class="header">Acciones</li>
+    <li class="boton-img" style="background-image: url('/images/add1-48.png');">
+      <%= link_to_remote_redbox("Crear reportes", :url=>crear_path,:method=>:get) %>
+    </li>
+	<li class="boton-img" style="background-image: url('/images/down48.png');">
+      <%= link_to 'Descargar Horarios', "/horario.xls"%>
+    </li>
+  </ul>
+</div>
+
+<% if current_user.rol == "admin" %>
+<div class="side-box">
+	<ul>
+        <li class="header">Administracion</li>
+        <li class="boton"><%= link_to "Usuarios", users_path %></li>
+		<li class="boton"><%= link_to 'Reportes', reportes_path %></li>
+		<li class="boton"><%= link_to 'Turnos', turnos_path %></li>
+		<li class="boton"><%= link_to 'Tipos', tipos_path %></li>
+	</ul>
+  <% end %>
+</div>
+<% end %>
+</div>
+
+<div id="main">

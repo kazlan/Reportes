@@ -1,0 +1,10 @@
+<h1>Reportes por fecha <%= @r.size %> </h1>
+
+<table>
+<%= render  :partial => 'reportes/reporte',
+			:collection => @r %>
+</table>		
+	
+<span id="bottombar">
+  <%= link_to 'volver', reportes_path %>
+</span>

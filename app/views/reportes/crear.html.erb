@@ -1,0 +1,31 @@
+<div id="crear_reportes">
+  <%= link_to_close_redbox image_tag('/images/close24.png'),:class=>"boton_cerrar"%>
+<% form_tag do%>
+<FIELDSET>
+  <LEGEND><b>Nuevos Reportes</b></LEGEND>
+  <table>
+	<tr>
+		<td> </td><td>Tiquet</td><td>Texto</td><td>Tipo</td>
+	</tr>
+
+  <% for num in 1..10 do %>
+    <tr>
+      <td><%= label_tag 'label' + num.to_s, num.to_s + "." %> </td>
+      <td><%= text_field_tag 'Ticket' + num.to_s,'',:size => 10 %></td>
+	  <td><%= text_field_tag 'Texto' + num.to_s,'' ,:size => 80 %></td>
+      <td><%= radio_button_tag "Tipo"+num.to_s,"1", true %>Incidencia
+      <%= radio_button_tag "Tipo"+num.to_s,"2" %>Tasca
+      <%= radio_button_tag "Tipo"+num.to_s,"3" %>Intervencion</td>
+      <td><%= check_box_tag "Warning"+num.to_s, "1" %><span id="warning_label">!</span></td>
+    </tr>
+  <% end %>
+  <tr><td></td>
+ 	<td>
+   <%= submit_tag "Seguir" %>
+   </td>
+   <td></td>
+ </tr>
+</table>
+</fieldset>
+<% end %> 
+</div>

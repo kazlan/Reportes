@@ -1,0 +1,10 @@
+# located in views/postoffice
+# we can access the variables we declared in models/postoffice.rb
+# body[:name]  = name is accessed by @name
+# body[:email] = email is accessedby @email
+ 
+# welcome.text.html.erb
+# note the HTML
+<p><b>Contraseña para la cuenta <i><%= @name %></i>.</b> </p>
+# 
+<%= @name %>. direccion: <%= @email %>

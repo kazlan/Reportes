@@ -1,0 +1,18 @@
+<%if reporte.warning then %>
+<tr id="warning" >
+<%else%>
+<tr>
+<%end%>
+	<td><%= link_to reporte.fecha, :action=>'index', :search=>{'fecha'=> reporte.fecha} %></td>
+	<td><%= link_to reporte.turno.nombre, :action=>'index', :search=>{'turno_s' => reporte.turno.nombre}%></td>
+    <td><%= link_to reporte.user.login, :action=>'index', :search=>{'user_s' => reporte.user.login }%></td>
+	<td><%= link_to reporte.tipo.nombre, :action=>'index', :search=>{'tipo_s'=>reporte.tipo.nombre} %></td>
+	<td><%= link_to reporte.ticket, "http://jira.ccrtvi.local/browse/#{reporte.ticket}",:target=>'_blank' %>
+	<td align="left"><%= link_to reporte.texto[0..59], nil,:confirm => "Texto del Reporte:\n #{reporte.texto}" %></td>
+
+	<% if ( (current_user.login  == reporte.user.login) || (current_user.rol == "admin"))%>
+	  <td class="list_button"> <!--<%= link_to 'E', edit_reporte_path(reporte) %> -->
+	  	<%= link_to_remote_redbox("E", :url =>"/reportes/#{reporte.id}/edit",:method=>"get") %>
+	  	<%= link_to 'X', reporte,:confirm => 'Seguro que desea eliminar el registro?', :method => :delete %></td>
+	<%end%>
+</tr>

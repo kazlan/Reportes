@@ -1,0 +1,22 @@
+<!-- ## CABECERA ############################################### -->
+<%= render :partial=> "layouts/cabecera" %>
+<div id=inner_main">
+<!-- ## LISTA DE REPORTES ###################################### -->
+<div id="lista_reportes">
+<table class="main_table">
+	<tr class="yellow"><td>Fecha</td><td>Turno</td><td>Técnico</td><td>Tipo</td><td>Tiquet</td><td>texto</td><td></td></tr>
+<%= render  :partial => 'reportes/reporte',
+			:collection => @reportes %>
+</table>		
+
+<!-- ## PAGINACION ############################################# -->
+  <div id="paginacion">
+	<div class='pagination'>
+		<%= will_paginate @reportes, :previous_label=>"<<", :next_label=>">>" %>
+	</div>
+  </div>
+</div>
+</div>
+</div>
+
+

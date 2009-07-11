@@ -1,0 +1,16 @@
+<h1>Editing turno</h1>
+
+<% form_for(@turno) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :nombre %><br />
+    <%= f.text_field :nombre %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @turno %> |
+<%= link_to 'Back', turnos_path %>

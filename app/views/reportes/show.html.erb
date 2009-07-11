@@ -1,0 +1,15 @@
+<div id="caption">
+<%=h @reporte.created_at.strftime("%d/%b/%Y") %>
+Turno de <%=h Turno.find_by_id(@reporte.turno_id).nombre %> (
+<%=h @reporte.user.login %> ) - 
+<%=h Tipo.find_by_id(@reporte.tipo_id).nombre %>
+</div>
+<p id="texto">
+  <%=h @reporte.texto %>
+</p>
+<div id="bottombar">
+<% if ( current_user.login == @reporte.user.login ) %>
+  <%= link_to 'Edit', edit_reporte_path(@reporte) %>
+<%end%>
+<%= link_to 'Back', reportes_path %>
+</div>

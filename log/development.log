@@ -1,0 +1,129 @@
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO "reportes" ("id","texto","tipo_id","turno_id","created_at","updated_at","ticket","user_s","user_id","tipo_s","turno_s","fecha") VALUES ('28','Refrescar cache','2','2','2009-01-08 18:20:57','2009-01-11 09:58:09','TTEC-6952','david','3','tasca','tardes','08-01-2009')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO "reportes" ("id","texto","tipo_id","turno_id","created_at","updated_at","ticket","user_s","user_id","tipo_s","turno_s","fecha") VALUES ('29','Tornar a processar keyframes','1','2','2009-01-08 18:20:57','2009-01-11 09:58:26','TTEC-6961','david','3','incidencia','tardes','08-01-2009')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO "reportes" ("id","texto","tipo_id","turno_id","created_at","updated_at","ticket","user_s","user_id","tipo_s","turno_s","fecha") VALUES ('30','Error sortida preprocess tr7','1','2','2009-01-08 18:20:57','2009-01-11 09:58:44','TTEC-6963','david','3','incidencia','tardes','08-01-2009')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO "reportes" ("id","texto","tipo_id","turno_id","created_at","updated_at","ticket","user_s","user_id","tipo_s","turno_s","fecha") VALUES ('31','Regenerar Schedulers','1','2','2009-01-08 18:20:57','2009-01-11 09:58:59','TTEC-6964','david','3','incidencia','tardes','08-01-2009')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO "reportes" ("id","texto","tipo_id","turno_id","created_at","updated_at","ticket","user_s","user_id","tipo_s","turno_s","fecha") VALUES ('32','Video no processat tr18','1','2','2009-01-08 18:20:57','2009-01-11 09:59:15','TTEC-6965','david','3','incidencia','tardes','08-01-2009')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO "reportes" ("id","texto","tipo_id","turno_id","created_at","updated_at","ticket","user_s","user_id","tipo_s","turno_s","fecha") VALUES ('33','tests','2','1','2009-01-09 19:26:47','2009-01-09 19:26:47','TTEC-9882','jorge','1','tasca','mañanas','09-01-2009')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO "reportes" ("id","texto","tipo_id","turno_id","created_at","updated_at","ticket","user_s","user_id","tipo_s","turno_s","fecha") VALUES ('34','ttest','1','1','2009-01-11 12:45:04','2009-01-11 12:45:04','ttec','Jorge','1','Incidencia','Mañanas','11-01-2009')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSQLite3::SQLException: near "TRUNCATE": syntax error: TRUNCATE "tipos"[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mDELETE FROM "tipos"[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO "tipos" ("id","nombre","created_at","updated_at") VALUES ('1','Incidencia','2008-11-21 17:39:12','2008-11-21 17:39:12')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO "tipos" ("id","nombre","created_at","updated_at") VALUES ('2','Tasca','2008-11-21 17:39:26','2008-11-21 17:39:26')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO "tipos" ("id","nombre","created_at","updated_at") VALUES ('3','Intervencion','2008-11-21 17:39:46','2008-11-21 17:39:46')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSQLite3::SQLException: near "TRUNCATE": syntax error: TRUNCATE "turnos"[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mDELETE FROM "turnos"[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO "turnos" ("id","nombre","created_at","updated_at") VALUES ('1','Mañanas','2008-11-21 17:40:08','2008-11-21 17:40:08')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO "turnos" ("id","nombre","created_at","updated_at") VALUES ('2','Tardes','2008-11-21 17:40:15','2008-11-21 17:40:15')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO "turnos" ("id","nombre","created_at","updated_at") VALUES ('3','Noches','2008-11-21 17:40:22','2008-11-21 17:40:22')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO "turnos" ("id","nombre","created_at","updated_at") VALUES ('4','Guardias','2009-01-05 16:33:56','2009-01-05 16:33:56')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSQLite3::SQLException: near "TRUNCATE": syntax error: TRUNCATE "users"[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mDELETE FROM "users"[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO "users" ("id","login","email","crypted_password","salt","created_at","updated_at","remember_token","remember_token_expires_at","rol") VALUES ('1','Jorge','moll_jor@ccrtvi.com','b5532788815321f2d5424e62685d4b5a432a02d3','fa8076d54c8a69dd0abe5fc76cd90da2c7cf0cc2','2008-12-01 16:20:31','2008-12-01 16:20:31',NULL,NULL,'admin')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO "users" ("id","login","email","crypted_password","salt","created_at","updated_at","remember_token","remember_token_expires_at","rol") VALUES ('2','ograsa','ograsa.c@tv3.cat','1cb97f3eb6a403b64601e4c90ebba7ff10e87b9c','e5a758a375d5e4dad22a991ca9541abf9a7a43f1','2009-01-05 16:01:18','2009-01-05 16:01:18',NULL,NULL,'admin')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO "users" ("id","login","email","crypted_password","salt","created_at","updated_at","remember_token","remember_token_expires_at","rol") VALUES ('3','David','drodriguez.c@tv3.cat','0b6811c1cd90ab0ab5e0fd3dba25d5ed15413fef','1c1fd90de7e61b399874ca4732589f35b4ea1df9','2009-01-05 16:58:57','2009-01-05 16:58:57',NULL,NULL,'tecnico')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO "users" ("id","login","email","crypted_password","salt","created_at","updated_at","remember_token","remember_token_expires_at","rol") VALUES ('4','Jordi','jrdsgr.r@tv3.cat','5e581f9c35a4c15859fa9ebde0f290aa63736230','645c795542fe51070062b83ff5c21b8e4f148d48','2009-01-07 14:00:13','2009-01-07 14:00:13',NULL,NULL,'tecnico')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO "users" ("id","login","email","crypted_password","salt","created_at","updated_at","remember_token","remember_token_expires_at","rol") VALUES ('5','German','glopez.c@tv3.cat','0074a895f74f1f2addcfd827eafb2a7afbdefde1','0a1af41c5888cd7b687aa1995cfff8a1a7267d1f','2009-01-08 19:27:34','2009-01-08 19:27:34',NULL,NULL,'tecnico')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO "users" ("id","login","email","crypted_password","salt","created_at","updated_at","remember_token","remember_token_expires_at","rol") VALUES ('7','ver',NULL,'6dae1ba23a98a64dfdcaa243a01426a1d7b3e101','ede812ac7c202cb8bd44f559856e2b907255aa3d','2009-01-11 11:21:41','2009-01-11 11:21:41',NULL,NULL,'consultas')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO "users" ("id","login","email","crypted_password","salt","created_at","updated_at","remember_token","remember_token_expires_at","rol") VALUES ('10','tecnic',NULL,'7f211d67f665fd407c7752909e39ebe36540c36f','c23fbf276e741bc9cdee9b7657203f039df46380','2009-01-11 11:47:15','2009-01-11 11:47:15',NULL,NULL,'tecnico')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2064.5ms)[0m   [0;1mDROP TABLE "reportes"[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mCREATE TABLE "reportes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "texto" varchar(255), "tipo_id" integer, "turno_id" integer, "created_at" datetime, "updated_at" datetime, "ticket" varchar(20), "user_s" varchar(255), "user_id" integer, "tipo_s" varchar(255), "turno_s" varchar(255), "fecha" varchar(255)) [0m
+  [4;36;1mSQL (6.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (77.2ms)[0m   [0mDROP TABLE "tipos"[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mCREATE TABLE "tipos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nombre" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mDROP TABLE "turnos"[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mCREATE TABLE "turnos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nombre" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mDROP TABLE "users"[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar(255), "email" varchar(255), "crypted_password" varchar(40), "salt" varchar(40), "created_at" datetime, "updated_at" datetime, "remember_token" varchar(255), "remember_token_expires_at" datetime, "rol" varchar(255)) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSQLite3::SQLException: near "TRUNCATE": syntax error: TRUNCATE "reportes"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mDELETE FROM "reportes"[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO "reportes" ("id","texto","tipo_id","turno_id","created_at","updated_at","ticket","user_s","user_id","tipo_s","turno_s","fecha") VALUES ('10','fitxes de noticies sense el camp "text -- s''ha modificat el fkeditor i han fallat els camps de DTY que l''usaven - Resolt','1','1','2009-01-07 14:06:12','2009-01-11 10:04:19','TTEC-6925','jordi','4','incidencia','mañanas','07-01-2009')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO "reportes" ("id","texto","tipo_id","turno_id","created_at","updated_at","ticket","user_s","user_id","tipo_s","turno_s","fecha") VALUES ('11','aeroports desactualitzats -- gestionat amb Engracia i Aena','1','1','2009-01-07 15:02:35','2009-01-11 10:03:33','TTEC-6916 ','jordi','4','incidencia','mañanas','07-01-2009')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO "reportes" ("id","texto","tipo_id","turno_id","created_at","updated_at","ticket","user_s","user_id","tipo_s","turno_s","fecha") VALUES ('12','RV: Incidència: El "sentirem" de Catclàssica no va - - gestionat amb Asi i catradio','1','1','2009-01-07 15:02:35','2009-01-11 10:03:58','18870','jordi','4','incidencia','mañanas','07-01-2009')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO "reportes" ("id","texto","tipo_id","turno_id","created_at","updated_at","ticket","user_s","user_id","tipo_s","turno_s","fecha") VALUES ('13','Problemes d''accés a internet -- Solucionat problema linia i2cat','1','1','2009-01-07 15:03:21','2009-01-11 10:03:15','TTEC-6923 ','jordi','4','incidencia','mañanas','07-01-2009')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO "reportes" ("id","texto","tipo_id","turno_id","created_at","updated_at","ticket","user_s","user_id","tipo_s","turno_s","fecha") VALUES ('18','Pindola en error','1','2','2009-01-07 19:02:06','2009-01-11 10:01:59','TTEC-6932','david','3','incidencia','tardes','07-01-2009')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO "reportes" ("id","texto","tipo_id","turno_id","created_at","updated_at","ticket","user_s","user_id","tipo_s","turno_s","fecha") VALUES ('19','Watchdog 10 KO','1','2','2009-01-07 19:02:06','2009-01-11 10:02:20','TTEC-6931','david','3','incidencia','tardes','07-01-2009')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO "reportes" ("id","texto","tipo_id","turno_id","created_at","updated_at","ticket","user_s","user_id","tipo_s","turno_s","fecha") VALUES ('20','Caducar caches','2','2','2009-01-07 19:02:06','2009-01-11 10:02:40','TTEC-6930','david','3','tasca','tardes','07-01-2009')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO "reportes" ("id","texto","tipo_id","turno_id","created_at","updated_at","ticket","user_s","user_id","tipo_s","turno_s","fecha") VALUES ('21','Error pvideo TR18','1','2','2009-01-07 19:02:06','2009-01-11 10:02:57','TTEC-6927','david','3','incidencia','tardes','07-01-2009')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO "reportes" ("id","texto","tipo_id","turno_id","created_at","updated_at","ticket","user_s","user_id","tipo_s","turno_s","fecha") VALUES ('22','Missatges vodafone fallits','1','1','2009-01-08 08:22:34','2009-01-11 10:01:41','TTEC-6940','jordi','4','incidencia','mañanas','08-01-2009')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO "reportes" ("id","texto","tipo_id","turno_id","created_at","updated_at","ticket","user_s","user_id","tipo_s","turno_s","fecha") VALUES ('23','renovació dominis febrer','2','1','2009-01-08 14:28:58','2009-01-11 10:00:03','TTEC-6960','jordi','4','tasca','mañanas','08-01-2009')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO "reportes" ("id","texto","tipo_id","turno_id","created_at","updated_at","ticket","user_s","user_id","tipo_s","turno_s","fecha") VALUES ('24','titulars catinfo desactualitzats','1','1','2009-01-08 14:28:58','2009-01-11 10:00:17','TTEC-6959','jordi','4','incidencia','mañanas','08-01-2009')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO "reportes" ("id","texto","tipo_id","turno_id","created_at","updated_at","ticket","user_s","user_id","tipo_s","turno_s","fecha") VALUES ('25','Contrassenya Albert Bonet','2','1','2009-01-08 14:28:58','2009-01-11 10:00:31','TTEC-6954','jordi','4','tasca','mañanas','08-01-2009')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO "reportes" ("id","texto","tipo_id","turno_id","created_at","updated_at","ticket","user_s","user_id","tipo_s","turno_s","fecha") VALUES ('26','Escalat:TPROG-53410 El temps del Teletext','1','1','2009-01-08 14:28:58','2009-01-11 10:01:14','TTEC-6948 ','jordi','4','incidencia','mañanas','08-01-2009')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO "reportes" ("id","texto","tipo_id","turno_id","created_at","updated_at","ticket","user_s","user_id","tipo_s","turno_s","fecha") VALUES ('27','Escalat:TPROG-53425 Aeroports del Teletext','1','1','2009-01-08 14:29:23','2009-01-11 09:59:45','TTEC-6958','jordi','4','incidencia','mañanas','08-01-2009')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO "reportes" ("id","texto","tipo_id","turno_id","created_at","updated_at","ticket","user_s","user_id","tipo_s","turno_s","fecha") VALUES ('28','Refrescar cache','2','2','2009-01-08 18:20:57','2009-01-11 09:58:09','TTEC-6952','david','3','tasca','tardes','08-01-2009')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO "reportes" ("id","texto","tipo_id","turno_id","created_at","updated_at","ticket","user_s","user_id","tipo_s","turno_s","fecha") VALUES ('29','Tornar a processar keyframes','1','2','2009-01-08 18:20:57','2009-01-11 09:58:26','TTEC-6961','david','3','incidencia','tardes','08-01-2009')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO "reportes" ("id","texto","tipo_id","turno_id","created_at","updated_at","ticket","user_s","user_id","tipo_s","turno_s","fecha") VALUES ('30','Error sortida preprocess tr7','1','2','2009-01-08 18:20:57','2009-01-11 09:58:44','TTEC-6963','david','3','incidencia','tardes','08-01-2009')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO "reportes" ("id","texto","tipo_id","turno_id","created_at","updated_at","ticket","user_s","user_id","tipo_s","turno_s","fecha") VALUES ('31','Regenerar Schedulers','1','2','2009-01-08 18:20:57','2009-01-11 09:58:59','TTEC-6964','david','3','incidencia','tardes','08-01-2009')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO "reportes" ("id","texto","tipo_id","turno_id","created_at","updated_at","ticket","user_s","user_id","tipo_s","turno_s","fecha") VALUES ('32','Video no processat tr18','1','2','2009-01-08 18:20:57','2009-01-11 09:59:15','TTEC-6965','david','3','incidencia','tardes','08-01-2009')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO "reportes" ("id","texto","tipo_id","turno_id","created_at","updated_at","ticket","user_s","user_id","tipo_s","turno_s","fecha") VALUES ('33','tests','2','1','2009-01-09 19:26:47','2009-01-09 19:26:47','TTEC-9882','jorge','1','tasca','mañanas','09-01-2009')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO "reportes" ("id","texto","tipo_id","turno_id","created_at","updated_at","ticket","user_s","user_id","tipo_s","turno_s","fecha") VALUES ('34','ttest','1','1','2009-01-11 12:45:04','2009-01-11 12:45:04','ttec','Jorge','1','Incidencia','Mañanas','11-01-2009')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSQLite3::SQLException: near "TRUNCATE": syntax error: TRUNCATE "tipos"[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mDELETE FROM "tipos"[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO "tipos" ("id","nombre","created_at","updated_at") VALUES ('1','Incidencia','2008-11-21 17:39:12','2008-11-21 17:39:12')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO "tipos" ("id","nombre","created_at","updated_at") VALUES ('2','Tasca','2008-11-21 17:39:26','2008-11-21 17:39:26')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO "tipos" ("id","nombre","created_at","updated_at") VALUES ('3','Intervencion','2008-11-21 17:39:46','2008-11-21 17:39:46')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSQLite3::SQLException: near "TRUNCATE": syntax error: TRUNCATE "turnos"[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mDELETE FROM "turnos"[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO "turnos" ("id","nombre","created_at","updated_at") VALUES ('1','Mañanas','2008-11-21 17:40:08','2008-11-21 17:40:08')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO "turnos" ("id","nombre","created_at","updated_at") VALUES ('2','Tardes','2008-11-21 17:40:15','2008-11-21 17:40:15')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO "turnos" ("id","nombre","created_at","updated_at") VALUES ('3','Noches','2008-11-21 17:40:22','2008-11-21 17:40:22')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO "turnos" ("id","nombre","created_at","updated_at") VALUES ('4','Guardias','2009-01-05 16:33:56','2009-01-05 16:33:56')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSQLite3::SQLException: near "TRUNCATE": syntax error: TRUNCATE "users"[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mDELETE FROM "users"[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO "users" ("id","login","email","crypted_password","salt","created_at","updated_at","remember_token","remember_token_expires_at","rol") VALUES ('1','Jorge','moll_jor@ccrtvi.com','b5532788815321f2d5424e62685d4b5a432a02d3','fa8076d54c8a69dd0abe5fc76cd90da2c7cf0cc2','2008-12-01 16:20:31','2008-12-01 16:20:31',NULL,NULL,'admin')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO "users" ("id","login","email","crypted_password","salt","created_at","updated_at","remember_token","remember_token_expires_at","rol") VALUES ('2','ograsa','ograsa.c@tv3.cat','1cb97f3eb6a403b64601e4c90ebba7ff10e87b9c','e5a758a375d5e4dad22a991ca9541abf9a7a43f1','2009-01-05 16:01:18','2009-01-05 16:01:18',NULL,NULL,'admin')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO "users" ("id","login","email","crypted_password","salt","created_at","updated_at","remember_token","remember_token_expires_at","rol") VALUES ('3','David','drodriguez.c@tv3.cat','0b6811c1cd90ab0ab5e0fd3dba25d5ed15413fef','1c1fd90de7e61b399874ca4732589f35b4ea1df9','2009-01-05 16:58:57','2009-01-05 16:58:57',NULL,NULL,'tecnico')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO "users" ("id","login","email","crypted_password","salt","created_at","updated_at","remember_token","remember_token_expires_at","rol") VALUES ('4','Jordi','jrdsgr.r@tv3.cat','5e581f9c35a4c15859fa9ebde0f290aa63736230','645c795542fe51070062b83ff5c21b8e4f148d48','2009-01-07 14:00:13','2009-01-07 14:00:13',NULL,NULL,'tecnico')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO "users" ("id","login","email","crypted_password","salt","created_at","updated_at","remember_token","remember_token_expires_at","rol") VALUES ('5','German','glopez.c@tv3.cat','0074a895f74f1f2addcfd827eafb2a7afbdefde1','0a1af41c5888cd7b687aa1995cfff8a1a7267d1f','2009-01-08 19:27:34','2009-01-08 19:27:34',NULL,NULL,'tecnico')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO "users" ("id","login","email","crypted_password","salt","created_at","updated_at","remember_token","remember_token_expires_at","rol") VALUES ('7','ver',NULL,'6dae1ba23a98a64dfdcaa243a01426a1d7b3e101','ede812ac7c202cb8bd44f559856e2b907255aa3d','2009-01-11 11:21:41','2009-01-11 11:21:41',NULL,NULL,'consultas')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO "users" ("id","login","email","crypted_password","salt","created_at","updated_at","remember_token","remember_token_expires_at","rol") VALUES ('10','tecnic',NULL,'7f211d67f665fd407c7752909e39ebe36540c36f','c23fbf276e741bc9cdee9b7657203f039df46380','2009-01-11 11:47:15','2009-01-11 11:47:15',NULL,NULL,'tecnico')[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTecnicos (20081108023907)
+Migrating to CreateReportes (20081108024427)
+Migrating to CreateTipos (20081121172309)
+Migrating to CreateTurnos (20081121172324)
+Migrating to CreateUsers (20081201131557)
+Migrating to AddWarningToReportes (20090619185429)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (154.3ms)[0m   [0mALTER TABLE "reportes" ADD "warning" boolean[0m
+  [4;36;1mSQL (181.5ms)[0m   [0;1mVACUUM[0m
+  [4;35;1mSQL (66.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090619185429')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("reportes")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("tipos")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("turnos")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;36;1mReporte Load (0.5ms)[0m   [0;1mSELECT * FROM "reportes" WHERE ("reportes"."id" = 1300) [0m

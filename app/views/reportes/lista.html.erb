@@ -1,0 +1,10 @@
+<h1>Reportes de <%= @crit(1).name %></h1>
+
+<table>
+<%= render  :partial => 'reportes/reporte',
+			:collection => @crit %>
+</table>		
+	
+<span id="bottombar">
+  <%= link_to 'Nuevo reporte', new_reporte_path %>
+</span>

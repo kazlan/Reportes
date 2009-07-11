@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  texto: MyString
+  tecnico: MyString
+  tipo: MyString
+  turno: MyString
+
+two:
+  texto: MyString
+  tecnico: MyString
+  tipo: MyString
+  turno: MyString

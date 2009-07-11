@@ -1,0 +1,15 @@
+jbq = "f:\JobQueue.jbq"
+f_temp = File.create("tempjbq")
+f = File.open(jbq)
+
+while ! f.eof
+  es_ini = (linea = f.readline) is "<CompletedJobs>"
+  
+  
+  si !flagcopia OK hasta CJ
+  
+  mientras ! /CJ
+    no_copia
+   
+  
+  

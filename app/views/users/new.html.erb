@@ -1,0 +1,24 @@
+<%= error_messages_for :user %>
+<%= render :partial=> "layouts/cabecera" %>
+<div class="caja_fondo2">
+<B>Alta de usuario</b>
+<% form_for :user, :url => users_path do |f| -%>
+<p><label for="login">Login</label><br/>
+<%= f.text_field :login %></p>
+
+<p> 
+<!-- existe una tercera categoria 'Admin', pero creo que es preferible que sólo se asigne a través de sqlitemanager --> 
+     <%= radio_button "user", "rol","tecnico",:checked=>"checked" %>Tecnico	
+      <%= radio_button "user", "rol","consultas" %>Consultas
+      <%= radio_button "user", "rol", "administrador"%>Administrador
+</p>
+
+<p><label for="password">Password</label><br/>
+<%= f.password_field :password %></p>
+
+<p><label for="password_confirmation">Confirm Password</label><br/>
+<%= f.password_field :password_confirmation %></p>
+
+<p><%= submit_tag 'Sign up' %></p>
+<% end -%>
+</div>

@@ -1,0 +1,31 @@
+<h1>Nuevo reporte</h1>
+
+<% form_for(@reporte) do |f| %>
+  <%= f.error_messages %>
+  <table border=0>
+  <tr>
+  	<td>
+  	<%= f.label :tecnico%>
+    <%= collection_select (:reporte,:tecnico_id, Tecnico.find(:all), :id, :nombre) %>
+    </td>
+    <td>
+    <%= f.label :tipo %>
+    <%= collection_select (:reporte,:tipo_id, Tipo.find(:all), :id, :nombre) %>
+    </td>
+    <td>
+    <%= f.label :turno %>
+    <%= collection_select (:reporte,:turno_id, Turno.find(:all), :id, :nombre) %>
+    </td>
+  </tr>
+ </table>
+<p>
+      <%= f.label :texto %><br/>
+      <%= f.text_area :texto %>
+</p>
+<p>
+    <%= f.submit "Crear" %>
+  </p>
+<% end %>
+<span id="bottombar">
+<%= link_to 'Volver', reportes_path %>
+</span>

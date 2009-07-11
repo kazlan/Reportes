@@ -1,0 +1,20 @@
+<!-- ## CABECERA ############################################### -->
+<%= render :partial=> "layouts/cabecera" %>
+<div class="caja_fondo2">
+<h1>Listing turnos</h1>
+<table>
+  <tr>
+    <th>Nombre</th>
+  </tr>
+<% for usuario in @usuarios %>
+  <tr>
+    <td width="90%"><%=h usuario.login %></td>
+    <td><%=h usuario.rol%>
+    <td><%= link_to 'X', usuario, :confirm => 'Seguro que quiere eliminar el usuario?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+<%= link_to 'Crear usuario', new_user_path %>
+<div>

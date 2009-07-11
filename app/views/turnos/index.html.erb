@@ -1,0 +1,21 @@
+<!-- ## CABECERA ############################################### -->
+<%= render :partial=> "layouts/cabecera" %>
+<div class="caja_fondo2">
+<h1>Listing turnos</h1>
+<table>
+  <tr>
+    <th>Nombre</th>
+  </tr>
+<% for turno in @turnos %>
+  <tr>
+    <td><%=h turno.nombre %></td>
+    <td><%= link_to 'Show', turno %></td>
+    <td><%= link_to 'Edit', edit_turno_path(turno) %></td>
+    <td><%= link_to 'Destroy', turno, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+<%= link_to 'New turno', new_turno_path %>
+<div>
